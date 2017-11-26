@@ -402,6 +402,7 @@ a {
     border-radius: 5px;
     color: #fff;
     transition: .3s all;
+    white-space: nowrap;
     
     &:hover {
         background: #3b6ddf;
@@ -525,7 +526,7 @@ a {
     font-family: 'Ubuntu';
     
     .header__fixed-container {
-        width: 60%;
+        width: 70%;
         height: 100%;
         margin: 0 auto;
         display: flex;
@@ -1459,3 +1460,60 @@ a {
 .results__title-career, .results__desc-career {
     color: #000;
 }
+
+/** Adaptive **/
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .header__fixed {
+                .header__fixed-container {
+            width: 90%;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header__items-container {
+        display: none;
+    }
+    .header__hamburger {
+        display: block;
+    }
+    
+        .header__fixed {
+            min-width: auto;
+                .header__fixed-container {
+            justify-content: space-between;
+            width: 90%;
+        }
+    }
+    
+    .header__fake {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+     .header__items-container {
+        display: none;
+    }
+    .header__hamburger {
+        display: block;
+    }
+    
+        .header__fixed {
+            min-width: auto;
+                .header__fixed-container {
+            justify-content: space-between;
+            width: 90%;
+        }
+    }
+    
+    .header__fake {
+        display: none;
+    }
+}
+    
