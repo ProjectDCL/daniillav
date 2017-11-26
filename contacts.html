@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniil Lavrenchuk</title>
     <link rel="icon" type="favicon" href="img/icons/favicon.ico">
     <link rel="stylesheet" href="css/main.css">
@@ -170,13 +171,13 @@
                     <div class="form__title">связаться со мной</div>
                     <form class="form__sendme" id="order-form">
                             <label for="" class="form__name">
-                                <input class="form-input" name="name" type="text" placeholder="Ваше имя">
+                                <input class="form-input" name="name" type="text" placeholder="Ваше имя" required="required">
                             </label>
                             <label for="" class="form__mail">
-                                <input class="form-input" name="mail" type="text" placeholder="Ваш e-mail">
+                                <input class="form-input" name="email" type="text" placeholder="Ваш e-mail" required="required">
                             </label>
                             <label for="" class="form__message">
-                                <textarea class="form-input form__message" name="comment" placeholder="Ваше сообщение"></textarea>
+                                <textarea class="form-input form__message" name="message" placeholder="Ваше сообщение" required="required"></textarea>
                             </label>
                             
                             <div class="form__end">
@@ -291,5 +292,6 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuQrp1f8_MxZJqT2F_fMv2AtbBGnorj0c&callback=initMap">
     </script>
     <script src="js/main.js"></script>
+    <script src="js/ajax.js"></script>
 </body>
 </html>
