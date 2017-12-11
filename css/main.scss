@@ -920,7 +920,7 @@ a {
     .works__block {
         display: flex !important;
         flex-direction: row !important;
-        height: 95vh;  
+        height: 1023px;  
         padding-left: 0; //TEMP!!!!
     }
 
@@ -956,11 +956,14 @@ a {
     align-self: flex-end;
 }
 
+.slider__left-phone{
+    height: 90%;
+}
+
 
 
 .slider__left-default {
     align-self: center;
-    height: 50%;
     width: 80%;
 }
 
@@ -1353,6 +1356,11 @@ a {
     display: flex;
     width: 70%;
     justify-content: space-between;
+    
+    
+    display: none;
+    /* TEMP SETTING !!!!*/
+    
 }
 
 .education__photo {
@@ -1482,6 +1490,15 @@ a {
     .myhistory__wrapper {
         width: 90%;
     }
+    
+    .works__desc {
+        font-size: 25px;
+    }
+    
+    .video__item {
+        min-height: 590px;
+        height: auto;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1563,9 +1580,22 @@ a {
         width: 70%;
     }
     
-    .video__item{
-        
-
+        .works__desc {
+        font-size: 25px;
+    }
+    
+    .works__slogan {
+        font-size: 35px;
+    }
+    
+    .slider__left-phone {
+        height: auto;
+        width: 70%;
+    }
+    
+    .video__item {
+        min-height: 450px;
+        height: auto;
     }
 }
 
@@ -1773,5 +1803,78 @@ a {
             }
         }
     
+    .education__desc {
+        width: 95%;
+    }
+    
+        .slider__left-phone {
+        height: auto;
+        width: 70%;
+    }
+    
+    
+    /* Works slider adaptive */
+    
+    .works__block {
+        height: auto;
+    }
+    
+    .works__li {
+        flex-direction: column-reverse;
+    }
+    
+    .works__desc {
+        display: none;
+    }
+    
+        .works__slider-left, .works__slider-right {
+        width: 100%;
+    }
+    
+    .works__slider-right {
+        align-items: center;
+        margin: 30px 0;
+    }
+    
+    .works__slider-company {
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    .works__stack {
+        width: 70%;
+    }
+    
+    .works__slogan {
+        text-align: center;
+        font-size: 30px;
+        margin: 25px 0px;
+    }
+    
+    .slider__left-default {
+        margin: 50px 0;
+    }
+    
+    /* Video section */
+    
+    .video__item-adaptive {
+        display: none;
+    }
+    
+    .videos {
+        flex-direction: row;
+        
+    }
+    
+    .video__item {
+        width: 50%;
+        min-height: 490px;
+        height: auto;
+    }
+    
+    .video__item-left, .video__item-right {
+    width: 100%;
+    position: relative;
+}
 }
     
